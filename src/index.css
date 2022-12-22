@@ -81,11 +81,25 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
 }
-@media screen and (min-width: 1440px) {
-  .card-image .image {
-    -o-object-position: left top;
-    object-position: left top;
-  }
+@media screen and (max-width: 1220px) and (min-width:768px) {
+.image{
+  width: 50%;
+  object-fit: cover;
+}
+
+.product-detail__top__title{
+  font-size: 1.5rem  !important;
+}
+.product-detail__top{
+  padding: 1.3rem !important;
+  margin-bottom: 2rem !important;
+}
+.product .product-detail{
+  width: 100%;
+}
+.product-detail__slider{
+padding: 0 1.5rem !important;
+}
 }
 .product-detail {
   max-width: -webkit-max-content;
@@ -143,7 +157,6 @@ body {
 .product-detail__slider__product-card {
   max-height: 360px;
   max-width: 230px;
-  height: 100%;
   color: var(--variable-black);
   font-family: "Avenir";
   font-size: 0.9rem;
@@ -195,10 +208,9 @@ body {
 
 .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 40px;
   height: 40px;
-  margin-top: -22px !important;
   z-index: 10;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -206,7 +218,18 @@ body {
   background: transparent;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
+  .swiper-button-next{
+    top: 38%;
+    right: 3%;
+  }
+  .image{
+  width: 100%;
+}
+ .product-detail__top__title{
+  font-size: 20px  !important;
+}
+
 .main {
     display: flex;
     flex-direction: column;
